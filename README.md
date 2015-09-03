@@ -4,7 +4,7 @@
 # then figure it out yourself. Don't bother us. Because quite frankly, we don't care.
 # You have been warned!
 
-The Stack Stalker is a simple stocks value tracker. Currently it does following things.
+The Stock Stalker is a simple stocks value tracker. Currently it does following things.
 1) Imports portfolio from a file and tracks the value in (nowhere) near realtime manner using yahoo financial APIs.
    The delay is same (a few milliseconds more) than what yahoo says, since they themselves show data
    which is about 20 min old.
