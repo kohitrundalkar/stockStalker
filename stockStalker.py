@@ -81,7 +81,7 @@ def preparePortfolio():
     fileContents = [x.strip() for x in fileContents]
     
     currentStock = None
-	for line in fileContents:
+    for line in fileContents:
         (isStockLine, value) = UF.isNewStockLine()
         (isActionLine, action, stockCount, stockPrice) = UF.isStockActionLine(line)
         (isTriggerLine, condition, value) = UF.isStockTriggerLine(line)
@@ -91,7 +91,7 @@ def preparePortfolio():
         elif True == isActionLine:
             if currentStock == None:
                 #TODO: put a try except around it and log errors.
-                raise
+           	    raise
             
             d_stockValueAction[currentStock]['actions'].append({'action': action, 'shares': stockCount, 'price': stockPrice})
             if(action == "BUY"):
@@ -103,8 +103,9 @@ def preparePortfolio():
                 raise
         elif True == isTriggerLine:
             #TODO: Handle triggers
+            print "Not ready yet"
 
-    
+
 
 def prepareWatchList():
     '''
