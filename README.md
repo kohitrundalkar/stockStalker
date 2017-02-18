@@ -51,13 +51,13 @@ and price at which they were bought along with triggers
 eg
 
 STOCK: GOOG
-COUNT: 10 @ 405.43
-COUNT: 2 @ 399.23
-COUNT: 20 @ 496.12
+BUY: 10 @ 405.43
+SELL: 2 @ 399.23
+BUY: 20 @ 496.12
 TRIGGER: gt 505.0
 TRIGGER: lt 395.5
 STOCK: YHOO
-COUNT: 120 @ 33
+BUY: 120 @ 33
 
 In the example above, if we look at the google stock and its count and triggers, 
 the COUNT line represents number of stocks bought and the number after '@' implies
